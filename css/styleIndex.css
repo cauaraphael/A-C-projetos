@@ -5,8 +5,8 @@
 }
 .start
 {
-    display:inline-block;
-    position: absolute;
+    display:inline-block;/* tamanho da div fica igual ao tamanho do conteudo*/
+    position: absolute;/* Posicionamento livre*/
     right: 3vw;
     top: 20vh;
     transition: transform 1.0s ease;/* velocidade da transição*/
