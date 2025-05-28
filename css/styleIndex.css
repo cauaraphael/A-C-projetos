@@ -1,21 +1,43 @@
 *{
     margin: 0;
     padding:0;
+    box-sizing: border-box;
+
+}
+body
+{
+    background-image:url(../Imagens/FundoIndex.png);
+    background-size: cover; /*cobre a tela toda*/
+    background-repeat: no-repeat; /* não repete imagem*/
+    z-index: -1; /* camada em que  div ficará */
+    background-attachment: fixed;/* fundo fixo ao rolar a pagina*/
+    background-position: center;
+     line-height: 1.6; /* Melhora a legibilidade */
 
 }
 .start
 {
-    display:inline-block;/* tamanho da div fica igual ao tamanho do conteudo*/
+    display:inline-block ;
     position: absolute;/* Posicionamento livre*/
     right: 3vw;
     top: 20vh;
     transition: transform 1.0s ease;/* velocidade da transição*/
+    z-index: 2;
+    height: auto; /* Mantém a proporção */
+    
 }
+.press-start
+{
+  width: clamp(350px, 35vw, 960px); /* Cresce em telas maiores, mas se adapta em menores */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block;
+  margin: 0 auto; /* Centraliza se precisar */
+}
+
 
 .jogar
 {
     text-align: center;
-    font-size: 20px;
     font-family: "Press Start 2P", system-ui;/*Fonte Arcade*/
     color: #f7ba1f;
     text-shadow: 
@@ -23,6 +45,7 @@
         -1.5px 1.5px 0 #000000,
         1.5px -1.5px 0 #000000,
         -1.5px -1.5px 0 #000000;
+    font-size: clamp(20px, 2VW, 5rem);
     
 }
 
@@ -34,4 +57,30 @@
 .start-link
 {
  text-decoration: none;
+}
+.frase-efeito
+{
+    color: white;
+    font-family:"Press Start 2P", system-ui;
+    position: absolute;
+    left: 7vw;
+    top:30vh;
+    z-index: 2;
+    height: auto;
+    text-align: center;
+}
+P
+{
+    margin-bottom: 0.1em;
+        font-size: 1rem;
+}
+.titulo
+{
+     font-size:clamp(30px,3VW,60px); /* Responsivo com tamanhos mínimo e máximo */
+}
+.Desafio
+{
+ font-family: 'Times New Roman', Times, serif;
+ font-size: clamp(12px,1.2vw,20px);
+ text-align:center;
 }
