@@ -8,8 +8,7 @@ body
 {
     background-image:url(../Imagens/FundoIndex.png);
     background-size: cover; /*cobre a tela toda*/
-    background-repeat: no-repeat; /* não repete imagem*/
-    z-index: -1; /* camada em que  div ficará */
+    background-repeat: no-repeat; /* não repete imagem*/    
     background-attachment: fixed;/* fundo fixo ao rolar a pagina*/
     background-position: center;
      line-height: 1.6; /* Melhora a legibilidade */
@@ -22,7 +21,7 @@ body
     right: 3vw;
     top: 20vh;
     transition: transform 1.0s ease;/* velocidade da transição*/
-    z-index: 2;
+    
     height: auto; /* Mantém a proporção */
     
 }
@@ -65,7 +64,6 @@ body
     position: absolute;
     left: 7vw;
     top:30vh;
-    z-index: 2;
     height: auto;
     text-align: center;
 }
