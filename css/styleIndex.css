@@ -14,6 +14,49 @@ body
      line-height: 1.6; /* Melhora a legibilidade */
 
 }
+a
+{
+    font-family:"Press Start 2P", system-ui; 
+    text-decoration:none;
+    color: white;
+}
+.logo
+{
+    margin-left: 3vw;
+   
+}
+.nav
+{
+    margin-inline:auto;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.nav-list
+{
+    display: flex;
+    list-style:none;
+    margin: 2vw;
+    gap: 32px;
+    text-shadow: 
+        1.5px -1.5px 0 #000000,   /* Contorno preto */
+        -1.5px 1.5px 0 #000000,
+        1.5px -1.5px 0 #000000,
+        -1.5px -1.5px 0 #000000;
+    margin-right:4vw ;
+    font-size:clamp(12px, 1.2vw, 24px);
+}
+
+li
+{
+    transition: transform 1.0s ease;
+    margin-right:2vw;
+}
+li:hover
+{
+ transform: scale(1.05);
+}
 .start
 {
     display:inline-block ;
@@ -74,7 +117,7 @@ P
 }
 .titulo
 {
-     font-size:clamp(30px,3VW,60px); /* Responsivo com tamanhos mínimo e máximo */
+     font-size:clamp(30px,2.5VW,60px); /* Responsivo com tamanhos mínimo e máximo */
 }
 .Desafio
 {
