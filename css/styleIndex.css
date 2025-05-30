@@ -25,6 +25,10 @@ a
     margin-left: 3vw;
    
 }
+.logo-imagem
+{
+    width:clamp(150px,13.3vw,300px);
+}
 .nav
 {
     margin-inline:auto;
@@ -61,8 +65,8 @@ li:hover
 {
     display:inline-block ;
     position: absolute;/* Posicionamento livre*/
-    right: 3vw;
-    top: 20vh;
+    right: 7vw;
+    top: 30vh;
     transition: transform 1.0s ease;/* velocidade da transição*/
     
     height: auto; /* Mantém a proporção */
@@ -70,7 +74,7 @@ li:hover
 }
 .press-start
 {
-  width: clamp(350px, 35vw, 960px); /* Cresce em telas maiores, mas se adapta em menores */
+  width: clamp(300px, 30vw, 900px); /* Cresce em telas maiores, mas se adapta em menores */
   height: auto; /* Mantém a proporção da imagem */
   display: block;
   margin: 0 auto; /* Centraliza se precisar */
@@ -87,7 +91,7 @@ li:hover
         -1.5px 1.5px 0 #000000,
         1.5px -1.5px 0 #000000,
         -1.5px -1.5px 0 #000000;
-    font-size: clamp(20px, 2VW, 5rem);
+    font-size: clamp(15px, 1.5px, 30);
     
 }
 
@@ -117,11 +121,20 @@ P
 }
 .titulo
 {
-     font-size:clamp(30px,2.5VW,60px); /* Responsivo com tamanhos mínimo e máximo */
+     font-size:clamp(25px,2.5VW,50px); /* Responsivo com tamanhos mínimo e máximo */
 }
 .Desafio
 {
  font-family: 'Times New Roman', Times, serif;
  font-size: clamp(12px,1.2vw,20px);
  text-align:center;
+}
+
+.mario
+{
+    width:clamp(80px,8VW,160px);
+}
+.moeda
+{
+    width:3vw;
 }
