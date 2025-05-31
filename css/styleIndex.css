@@ -63,12 +63,11 @@ li:hover
 }
 .start
 {
-    display:inline-block ;
+
     position: absolute;/* Posicionamento livre*/
     right: 7vw;
     top: 30vh;
     transition: transform 1.0s ease;/* velocidade da transição*/
-    
     height: auto; /* Mantém a proporção */
     
 }
@@ -77,7 +76,7 @@ li:hover
   width: clamp(300px, 30vw, 900px); /* Cresce em telas maiores, mas se adapta em menores */
   height: auto; /* Mantém a proporção da imagem */
   display: block;
-  margin: 0 auto; /* Centraliza se precisar */
+
 }
 
 
@@ -118,7 +117,7 @@ P
 {
     margin-bottom: 0.1em;
         font-size: 1rem;
-}
+}   
 .titulo
 {
      font-size:clamp(25px,2.5VW,50px); /* Responsivo com tamanhos mínimo e máximo */
@@ -137,4 +136,47 @@ P
 .moeda
 {
     width:3vw;
+}
+
+@media (max-width: 768px){
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center;     /* Centraliza horizontalmente */
+    gap: 4vw;                /* Espaço entre os elementos */
+    min-height: 80vh;        /* Altura mínima para ocupar a tela */
+    padding: 20px;           /* Evita que conteúdo encoste nas bordas */
+    width: 100%;             /* Largura total */
+  }
+
+
+  .start, .frase-efeito {
+    position: static;        /* Volta ao fluxo normal */
+    text-align: center;      /* Centraliza o texto */  
+  }
+
+  
+  .press-start {
+    width: 60vw;             /* Largura proporcional à tela */
+    min-width:300px;        /* Limite máximo para não ficar muito grande */
+    align-self: center;
+  }
+
+  /* Ajusta o tamanho do Mario e moedas */
+  .mario {
+    width: 12vw;
+    align-self: center;      /* Centraliza a imagem */
+  }
+
+  .moeda {
+    width: 5vw;
+  }
+  .titulo{
+    font-size: 6vw;
+  }
+
+  .Desafio{
+    font-size: 3.2vw;
+  }
 }
