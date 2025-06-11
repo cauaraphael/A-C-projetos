@@ -61,6 +61,17 @@ li:hover
 {
  transform: scale(1.05);
 }
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+.mobile-menu div
+{
+    width: 32px;
+    height: 2px;
+    background-color: #fff;
+    margin: 8px;
+}
 .start
 {
 
@@ -139,6 +150,72 @@ P
 }
 
 @media (max-width: 768px){
+    body{
+        overflow-y: hidden;
+        overflow-x:hidden ;
+    }
+   .nav {
+        position: relative; /* MUITO IMPORTANTE para posicionar o menu hamburguer */
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+        align-items: center;
+        height: 8vh;
+        background: #23232e;
+        
+    }
+    .logo-imagem{
+        width: 20vw;
+    }
+    .nav-list{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #23232e;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        margin: 0;
+        transition: transform 0.3s ease-in;
+    }
+   
+    .nav-list li{
+        font-size: 4.5vw;
+        margin-left: 0;
+        opacity: 0;
+    }
+    .nav-list li:nth-child(2){
+       margin-top: -30vw;
+    }
+    li
+    {
+        transition: transform 1.0s ease;
+        
+    }
+    li:hover
+        {
+ transform: scale(1.05);
+        }
+    .mobile-menu{
+        display: block;
+    }
+    .nav-list.active{
+        transform: translateX(0);
+    }
+    @keyframes  navLinkFade {
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
 .main {
     display: flex;
     flex-direction: column;
@@ -173,7 +250,7 @@ P
     width: 5vw;
   }
   .titulo{
-    font-size: 6vw;
+    font-size: 5.5vw;
   }
 
   .Desafio{
